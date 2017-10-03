@@ -1,0 +1,15 @@
+{
+  "name": {
+    "pt_BR": "Novo lead",
+    "en": "New lead"
+  },
+  "trigger_key": "new_lead",
+  "description": {
+    "pt_br": "Quando um novo lead é gerado",
+    "en": "When a new lead is generated"
+  },
+  "trigger_type": "polling",
+  "request": { 
+    "method_name": "webceo/webceo.php"
+  }
+}
