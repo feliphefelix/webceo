@@ -1,0 +1,57 @@
+{ 
+	"name": "WebCEO", 
+	"app_id": "webceo", 
+	"color": "#ff8001", 
+	"description": { 
+		"pt_BR": "O WebCEO é um conjunto de ferramentas de SEO de alta qualidade, alocadas e baseadas em uma única plataforma. É um software rápido, economizador de tempo, estável, customizável e elegante.", 
+		"en": "WebCEO is a set of high quality SEO tools, allocated and based on a single platform. It is fast, time-saving, stable, customizable and elegant software." }, 
+		"website": "https://online.webceo.com/", 
+		"signup_url": "https://online.webceo.com/", 
+		"api_base_uri": { 
+				"production": { 
+					"uri": "https://zapier.webceo.br.com", 
+					"label": "Produção", 
+					"default": true 
+					}
+			 }, 
+			 "authentication": {
+				 "ping_request": { 
+				 	"method_name": "/webceo/webceo.php", 
+				 	"params": {
+				 		"limit": 1
+				 	} 
+				 }, 
+				 "status": { 
+				 	"field": "ok", 
+				 	"value": "true" 
+				 },
+				 "type": "pass_through_header", 
+ 				 "fields": [ 
+	 					{ 
+	 						"name": "key", 
+	 						"label": "API Key", 
+	 						"mapping": "http_key", 
+	 						"type": "text", 
+	 						"validations": [ {"name": "min_length", "value": 70} ] 
+	 					}
+ 					],
+			 	"tutorial": { 
+			 	"link": { 
+			 		"pt_BR": "Onde encontrar o API Token de Produção na WebCEO?", 
+			 		"en": "Where can I find the WebCEO's production API token?"
+			 		}, 
+			 		"steps": [ 
+			 			{
+			 				"title": { 
+			 					"pt_BR": "Passo 1", 
+			 					"en": "Step 1" 
+			 				}, 
+			 				"content": { 
+			 					"pt_BR": "Encontre sua chave de API na página https://online.webceo.com/settings/api_access/ em suas configurações.", 
+			 					"en": "Find you API Key within the https://online.webceo.com/settings/api_access/ page in your settings." 
+			 				}, 
+			 			}
+			 		]
+			 	}
+		}
+}
