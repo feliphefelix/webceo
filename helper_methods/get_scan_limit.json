@@ -1,0 +1,20 @@
+{
+  "name": "Get scan limits from WebCEO user account",
+  "helper_method_key": "get_scan_limit",
+  "requests": [ 
+  	{
+      "method_name": "/webceo/get_project_limits.php",
+      "response_field": "data",
+      "params": {},
+      "mapping": {
+          "label": {
+            "fields": ["title"],
+            "prefix": "--> "
+          },
+          "value": {
+            "field": "id"
+          }
+      }  
+    }
+  ]
+}
