@@ -1,0 +1,101 @@
+{
+   "name":{
+      "pt_BR":"Criar um Projeto",
+      "en":"Create a Project"
+   },
+   "action_key":"add_project",
+   "description":{
+      "pt_BR":"Cria um projeto à sua conta da WebCEO",
+      "en":"Create a project in your WebCEO account"
+   },
+   "action_fields":{
+      "fields":[
+         {
+            "key":"site",
+            "name":{
+               "pt_BR":"Site",
+               "en":"Site"
+            },
+            "required":true,
+            "visible":true,
+            "advanced":false,
+            "field_type":"string",
+            "data_type":"string",
+            "max":250
+         },
+         {
+            "key":"email",
+            "name":{
+               "pt_BR":"E-mail do usuário",
+               "en":"User e-mail"
+            },
+            "required":true,
+            "visible":true,
+            "advanced":false,
+            "field_type":"string",
+            "data_type":"string",
+            "max":250
+         },
+         {
+            "key":"notes",
+            "name":{
+               "pt_BR":"Notas",
+               "en":"Notes"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"string",
+            "data_type":"string",
+            "max":250
+         },
+         {
+            "key":"grupos",
+            "name":{
+               "pt_BR":"Grupos",
+               "en":"Groups"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"string",
+            "data_type":"string",
+            "max":250
+         },
+         {
+            "key":"marker",
+            "name":{
+               "pt_BR":"Marker",
+               "en":"Marker"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type":"string",
+            "data_type":"string",
+            "max":250
+         },
+         {
+            "key":"limit",
+            "name":{
+               "pt_BR":"Id do Limite de Scan",
+               "en":"Scan Limit ID"
+            },
+            "required":false,
+            "visible":true,
+            "advanced":false,
+            "field_type": "dropdown", 
+            "data_type": "string", 
+            "list": { 
+               "type": "remote", 
+               "helper_method": "get_scan_limit" 
+            }
+
+         }
+      ]
+   },
+   "request": { 
+      "method_name": "/webceo/add_project.php", 
+      "json_api": true 
+   }
+}
