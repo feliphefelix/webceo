@@ -11,7 +11,7 @@
   "trigger_type": "polling",
   "base_datetime_filter": { 
     "field": "created_on",
-    "format": "%Y-%m-%d%T%H:%i:%m%s %z" 
+    "format": "%Y-%m-%d%T%H:%i:%m%s%Z" 
   },
   "request": { 
     "method_name": "/webceo/webceo.php"
