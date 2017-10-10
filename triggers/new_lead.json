@@ -9,7 +9,11 @@
     "en": "When a new lead is generated"
   },
   "trigger_type": "polling",
+  "base_datetime_filter": { 
+    "field": "created_on",
+    "format": "%Y-%m-%d%T%H:%i:%m%s %z" 
+  },
   "request": { 
-    "method_name": "webceo/webceo.php"
+    "method_name": "/webceo/webceo.php"
   }
 }

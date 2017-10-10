@@ -19,7 +19,7 @@
             "required":true,
             "visible":true,
             "advanced":false,
-            "field_type":"string",
+            "field_type":"custom",
             "data_type":"string",
             "max":250
          },
@@ -32,7 +32,7 @@
             "required":true,
             "visible":true,
             "advanced":false,
-            "field_type":"string",
+            "field_type":"custom",
             "data_type":"string",
             "max":250
          },
@@ -95,7 +95,8 @@
       ]
    },
    "request": { 
-      "method_name": "/webceo/add_project.php", 
+      "method_name": "/webceo/add_project.php",
+      "error_fields": ["Error"],
       "json_api": true 
    }
 }
