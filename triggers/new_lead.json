@@ -13,6 +13,231 @@
     "field": "created_on",
     "format": "%Y-%m-%d%T%H:%i:%m%s%Z" 
   },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {"key": "status",
+       "name": {
+          "pt_BR": "status",
+          "en": "status"
+       },
+       "description": {
+          "pt_BR": "status do lead",
+          "en": "lead status"
+       },
+       "field_type": "string"
+      },
+      {"key": "domain",
+       "name": {
+          "pt_BR": "dominio",
+          "en": "status"
+       },
+       "description": {
+          "pt_BR": "site do lead",
+          "en": "lead domain"
+       },
+       "field_type": "string"
+      },
+      {"key": "client_notes",
+       "name": {
+          "pt_BR": "notas do cliente",
+          "en": "client notes"
+       },
+       "description": {
+          "pt_BR": "notações do cliente",
+          "en": "client notes"
+       },
+       "field_type": "string"
+      },
+      {"key": "target_country",
+       "name": {
+          "pt_BR": "país alvo",
+          "en": "target country"
+       },
+       "description": {
+          "pt_BR": "Código de país ISO 3166 ou 00 para pesquisa global",
+          "en": "ISO 3166 country code or 00 for global search"
+       },
+       "field_type": "integer"
+      },
+      {"key": "lead",
+       "name": {
+          "pt_BR": "país alvo",
+          "en": "target country"
+       },
+       "description": {
+          "pt_BR": "id do lead",
+          "en": "lead id"
+       },
+       "field_type": "integer"
+      },
+      {"key": "bid_competition",
+       "name": {
+          "pt_BR": "competição de lance",
+          "en": "bid competition"
+       },
+       "description": {
+          "pt_BR": "a competição de lance média para as palavras-chave especificadas",
+          "en": "the average bid competition for the specified keywords "
+       },
+       "field_type": "integer"
+      },
+      {"key": "client_name",
+       "name": {
+          "pt_BR": "nome do cliente",
+          "en": "client name"
+       },
+       "description": {
+          "pt_BR": "nome do cliente",
+          "en": "client name"
+       },
+       "field_type": "string"
+      },
+      {"key": "moz_domain_authority",
+       "name": {
+          "pt_BR": "autoridade de domínio de moz",
+          "en": "moz domain authority"
+       },
+       "description": {
+          "pt_BR": "autoridade de domínio de moz",
+          "en": "moz domain authority"
+       },
+       "field_type": "string"
+      },
+      {"key": "additional_contact_info",
+       "name": {
+          "pt_BR": "autoridade de domínio de moz",
+          "en": "moz domain authority"
+       },
+       "description": {
+          "pt_BR": "Facebook: URL do perfil | Google+: URL do perfil | LinkedIn: URL do perfil | ID do Skype: nome do skype | Telefone: telefone numbe | Outros: outras informações de contato",
+          "en": "Facebook: profile URL | Google+: profile URL | LinkedIn: profile URL | Skype ID: skype name | Phone: phone numbe | Other: other contact info"
+       },
+       "field_type": "string"
+      },
+      {"key": "added_by_user",
+       "name": {
+          "pt_BR": "adicionado pelo usuário",
+          "en": "added by user"
+       },
+       "description": {
+          "pt_BR": "e-mail de um usuário de domínio que adicionou essa liderança",
+          "en": "email of a domain user who added this lead"
+       },
+       "field_type": "string"
+      },
+      {"key": "added_by_user",
+       "name": {
+          "pt_BR": "adicionado pelo usuário",
+          "en": "added by user"
+       },
+       "description": {
+          "pt_BR": "e-mail de um usuário de domínio que adicionou essa liderança",
+          "en": "email of a domain user who added this lead"
+       },
+       "field_type": "string"
+      },
+      {"key": "starred",
+       "name": {
+          "pt_BR": "estrelado",
+          "en": "starred"
+       },
+       "description": {
+          "pt_BR": "0 | 1, (0 - não estrelado, 1 - estrelado)",
+          "en": "0|1, (0 - not starred, 1 - starred)"
+       },
+       "field_type": "integer"
+      },
+      {"key": "created_on",
+       "name": {
+          "pt_BR": "criado em",
+          "en": "created on"
+       },
+       "description": {
+          "pt_BR": "YYYY-MM-DD HH:MM:SS",
+          "en": "YYYY-MM-DD HH:MM:SS"
+       },
+       "field_type": "date"
+      },
+      {"key": "pdf_report_language",
+       "name": {
+          "pt_BR": "linguagem do relatório em pdf",
+          "en": "pdf report lanaguage"
+       },
+       "description": {
+          "pt_BR": "código de linguagem ISO 639-1",
+          "en": "ISO 639-1 language code"
+       },
+       "field_type": "string"
+      },
+      {"key": "client_email",
+       "name": {
+          "pt_BR": "e-mail do cliente",
+          "en": "client email"
+       },
+       "description": {
+          "pt_BR": "e-mail do cliente",
+          "en": "client email"
+       },
+       "field_type": "string"
+      },
+      {"key": "keywords",
+       "name": {
+          "pt_BR": "palavras-chave",
+          "en": "keywords"
+       },
+       "description": {
+          "pt_BR": "deve ser separado por virgual (no máximo duas palavras-chaves)",
+          "en": "should be separeted by comma (two keywords maximum)"
+       },
+       "field_type": "string"
+      },
+      {"key": "target_language",
+       "name": {
+          "pt_BR": "linguagem alvo",
+          "en": "target language"
+       },
+       "description": {
+          "pt_BR": "Código de idioma ISO 639-1, (EN - por padrão)",
+          "en": "ISO 639-1 language code, (EN - by default)"
+       },
+       "field_type": "string"
+      },
+      {"key": "target_location",
+       "name": {
+          "pt_BR": "local alvo",
+          "en": "target location"
+       },
+       "description": {
+          "pt_BR": "Miami, FL, (opcional, apenas para Google)",
+          "en": "Miami, FL, (optional, for Google only)"
+       },
+       "field_type": "string"
+      },
+      {"key": "scan_status",
+       "name": {
+          "pt_BR": "local alvo",
+          "en": "target location"
+       },
+       "description": {
+          "pt_BR": "0|1|2, (0 - digitalização concluída, 1 - digitalização, 2 - pendente)",
+          "en": " 0|1|2, (0 - scan completed, 1 - scanning, 2 - pending)"
+       },
+       "field_type": "string"
+      },
+      {"key": "site_performance",
+       "name": {
+          "pt_BR": "performace do site",
+          "en": "site performance"
+       },
+       "description": {
+          "pt_BR": "pontuação de desempenho do site",
+          "en": "site performance score"
+       },
+       "field_type": "string"
+      }
+    ]
+  }, 
   "request": { 
     "method_name": "/webceo/webceo.php"
   }
